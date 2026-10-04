@@ -1,30 +1,30 @@
 {
-    "name": "s0o3eh6t1i",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "start": "node server.js",
-        "test": "jest",
-        "format": "prettier . --write",
-        "format:check": "prettier . --check",
-        "lint": "npx eslint .",
-        "lint:fix": "npx eslint . --fix",
-        "docker:build": "docker build -t cicd .",
-        "docker:run": "docker run -p 3000:3000 --init --rm cicd"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "dependencies": {
-        "express": "^5.2.1"
-    },
-    "devDependencies": {
-        "@eslint/js": "^10.0.1",
-        "eslint": "^10.12.0",
-        "globals": "^17.13.0",
-        "jest": "^30.2.0",
-        "prettier": "3.9.9",
-        "supertest": "^7.2.2"
-    }
+  "name": "s0o3eh6t1i",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
+    "docker:build": "docker build -t cicd .",
+    "docker:run": "docker run -p 3000:3000 --init --rm cicd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "jest": "^30.2.0",
+    "prettier": "3.9.9",
+    "supertest": "^7.2.2"
+  }
 }
