@@ -10,7 +10,8 @@ export default defineConfig([
     rules: { 'prefer-const': 'error' },
   },
   {
-    files: ['src/**/*.js', 'drizzle.config.js'],
+    // files: ['src/**/*.js', 'drizzle.config.js'],
+    files: ['**/*.js', '**/*.cjs'],
     languageOptions: { globals: globals.node, sourceType: 'commonjs' },
   },
   {
