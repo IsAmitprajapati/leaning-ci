@@ -7,8 +7,8 @@
         "test": "jest",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix"
+        "lint": "npx eslint .",
+        "lint:fix": "npx eslint . --fix"
     },
     "keywords": [],
     "author": "",
