@@ -3,15 +3,19 @@ import globals from 'globals';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
-    {
-        files: ['**/*.{js,mjs,cjs}'],
-        plugins: { js },
-        extends: ['js/recommended'],
-        languageOptions: { globals: globals.node },
-        rules: {
-            'no-console': 'warn',
-            'prefer-const': 'error',
-        },
-    },
-    { files: ['**/*.js'], languageOptions: { sourceType: 'commonjs' } },
+  {
+    files: ['**/*.{js,mjs,cjs}'],
+    plugins: { js },
+    extends: ['js/recommended'],
+    rules: { 'prefer-const': 'error' },
+  },
+  {
+    // files: ['src/**/*.js', 'drizzle.config.js'],
+    files: ['**/*.js', '**/*.cjs'],
+    languageOptions: { globals: globals.node, sourceType: 'commonjs' },
+  },
+  {
+    files: ['public/**/*.js'],
+    languageOptions: { globals: globals.browser },
+  },
 ]);
