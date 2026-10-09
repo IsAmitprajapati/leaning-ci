@@ -24,13 +24,11 @@ app.post('/api/subscribers', async (req, res) => {
       return res.status(400).json({ error: 'Invalid email' });
     }
 
-    console.log('email', email);
-
     const db = getDb();
 
     await db
       .insert(subscribers)
-      .values({ email: req.body.email })
+      .values({ email: email, emailAddress: email })
       .onConflictDoNothing({ target: subscribers.email });
 
     res.sendStatus(200);
