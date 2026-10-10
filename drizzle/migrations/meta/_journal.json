@@ -29,6 +29,13 @@
       "when": 1791605493312,
       "tag": "0003_windy_morgan_stark",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791605959732,
+      "tag": "0004_sticky_aaron_stack",
+      "breakpoints": true
     }
   ]
 }
